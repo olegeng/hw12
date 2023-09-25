@@ -9,7 +9,6 @@ jobs:
     steps:
       - run: sudo apt install python3
       - run: pwd
-      - run: sudo pip install -r requirements.txt
       - run: cat README.md
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -19,4 +18,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "This job's status is ${{ job.status }}."
-
+      - run: pip install -r requirements.txt
