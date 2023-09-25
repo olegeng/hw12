@@ -7,7 +7,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Install python
       - run: sudo apt install python3
       - name: Install requirements
         uses: actions/checkout@v3
