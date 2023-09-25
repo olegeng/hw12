@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt install python3
-      - rub: pwd
+      - run: pwd
       - run: pip install -r /home/runner/work/hw12/hw12/requirements.txt
       - run: cat README.md
       - name: Check out repository code
