@@ -1,3 +1,5 @@
+name: PR
+run-name: ${{ github.actor }} is testing out GitHub Actions, additional task
 on:
   pull_request:
     types: [opened, synchronize]
